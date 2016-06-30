@@ -11,7 +11,7 @@ app.controller('MainCtrl', function($scope){
 		floating: true,
 		swapping: false
 	};
-	
+
 	$scope.widgets = [
 
 		{
@@ -23,7 +23,7 @@ app.controller('MainCtrl', function($scope){
 		},
 		{
 			title: 'Second',
-			sizeX: 2,
+			sizeX: 4,
 			sizeY: 4,
 			row: 0,
 			col: 5
