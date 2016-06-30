@@ -2,17 +2,33 @@ var app = angular.module('app', ['gridster']);
 
 
 app.controller('MainCtrl', function($scope){
-	$scope.standardItems = [
-  { sizeX: 2, sizeY: 1, row: 0, col: 0 },
-  { sizeX: 2, sizeY: 2, row: 0, col: 2 },
-  { sizeX: 1, sizeY: 1, row: 0, col: 4 },
-  { sizeX: 1, sizeY: 1, row: 0, col: 5 },
-  { sizeX: 2, sizeY: 1, row: 1, col: 0 },
-  { sizeX: 1, sizeY: 1, row: 1, col: 4 },
-  { sizeX: 1, sizeY: 2, row: 1, col: 5 },
-  { sizeX: 1, sizeY: 1, row: 2, col: 0 },
-  { sizeX: 2, sizeY: 1, row: 2, col: 1 },
-  { sizeX: 1, sizeY: 1, row: 2, col: 3 },
-  { sizeX: 1, sizeY: 1, row: 2, col: 4 }
-];
+	$scope.title = 'My First Dashboard';
+	$scope.gridsterOpts = {
+		columns: 12,
+		margins: [20,20],
+		outerMargin: false,
+		pushing: true,
+		floating: true,
+		swapping: false
+	};
+	
+	$scope.widgets = [
+
+		{
+			title: 'First',
+			sizeX: 3,
+			sizeY: 3,
+			row: 0,
+			col: 0
+		},
+		{
+			title: 'Second',
+			sizeX: 2,
+			sizeY: 4,
+			row: 0,
+			col: 5
+		}
+
+	];
 });
+

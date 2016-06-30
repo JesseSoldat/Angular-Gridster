@@ -3,21 +3,41 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="bower_components/angular-gridster/dist/angular-gridster.min.css"/>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/javascript-detect-element-resize/jquery.resize.js"></script>
     <script src="bower_components/angular-gridster/dist/angular-gridster.min.js"></script>
+
     <script src="main.js"></script>
 </head>
 <body>
 <div ng-controller="MainCtrl">
-	
-<div gridster>
+<div class="dashboard-header">
+	{{title}}
+</div>
+<div gridster="gridsterOpts">
     <ul>
-        <li gridster-item="item" ng-repeat="item in standardItems"></li>
+        <li gridster-item="item" ng-repeat="item in widgets">
+        	<div class="widget-header">
+        		<span>{{item.title}}</span>
+        		<div class="widget-header-buttons">
+        			<button class="btn btn-default pull-right">
+        				<i class="fa fa-remove"></i>
+        			</button>
+        			<button class="btn btn-default pull-right">
+        				<i class="fa fa-gear"></i>
+        			</button>
+        		</div>
+        	</div>
+        </li>
     </ul>
 </div>
+
+
 
 
 

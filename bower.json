@@ -1,0 +1,23 @@
+{
+  "name": "Gridster",
+  "homepage": "https://github.com/JesseSoldat/Angular-Gridster",
+  "authors": [
+    "jesse soldat <jsoldat@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-gridster": "^0.13.10",
+    "jquery": "^3.0.0",
+    "font-awesome": "^4.6.3"
+  }
+}
